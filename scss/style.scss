@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+
+$black-color: rgba(26, 28, 26, 0.9);
+$red-color: rgba(199, 57, 43, 0.8);
+//#  df6446
+$tan-color: #f3dfc1;
+//  rgba(243, 206, 161, 0.8)
+$border: $black-color 4px solid;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: $tan-color;
+  color: $black-color;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-header {
+  background-color: $red-color;
+  color: $tan-color;
+  font-size: 2.12rem;
+  font-weight: 800;
+  padding: 0.25rem 0;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.contact-header {
+  background-color: $black-color;
+  color: $tan-color;
+  display: flex;
+
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem;
+
+  .right-contact {
+    text-align: right;
+  }
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  padding: 0.5rem 1rem;
+}
+
+.about {
+  background-color: $black-color;
+  border: $border;
+
+  h1 {
+    color: $tan-color;
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 0.25rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .about-content {
+    background-color: $tan-color;
+    p {
+      font-size: 1.25rem;
+      padding: 0.5rem;
+    }
+    .red-par {
+      color: $red-color;
+    }
+  }
+}
+
+.projects {
+  margin-top: 10px;
+
+  .top-projects {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+
+    div {
+      border: $border;
+    }
+  }
+
+  div {
+    font-size: 1.25rem;
+
+    h1 {
+      font-weight: 800;
+      text-transform: uppercase;
+    }
+  }
+  .project3 {
+    border: $border;
+    margin-top: 10px;
+
+    h1 {
+      color: $red-color;
+      font-size: 2.75rem;
+      font-weight: 700;
+      padding: 0 0.5rem;
+      text-transform: uppercase;
+    }
+    p {
+      padding: 0rem 0.5rem 0.25rem;
+    }
+  }
+  .project1 {
+    h1 {
+      background-color: $red-color;
+      font-size: 2.25rem;
+      font-weight: 700;
+      padding: 0.25rem 0.5rem;
+    }
+    p {
+      padding: 0.5rem;
+    }
+  }
+  .project2 {
+    background-color: $black-color;
+    h1 {
+      color: $red-color;
+      font-size: 3.8rem;
+      font-weight: 800;
+      padding: 0.25rem 0.5rem;
+    }
+    p {
+      background-color: $tan-color;
+      padding: 0.5rem 0.5rem 0.5rem;
+    }
+  }
+}
+
+.right-content {
+  div {
+    border: $border;
+    font-size: 1.25rem;
+  }
+  .top-content {
+    margin-bottom: 10px;
+    padding: 0.5rem;
+    h1 {
+      font-weight: 600;
+
+      text-transform: uppercase;
+    }
+    p {
+      padding: 0.2rem 0;
+    }
+    .ed-par1 {
+      font-weight: bold;
+    }
+    .ed-par2 {
+      color: $red-color;
+    }
+  }
+  .bottom-content {
+    margin-bottom: 10px;
+    h1 {
+      background-color: $red-color;
+      color: $tan-color;
+      font-size: 2.75rem;
+      font-weight: 600;
+      padding: 0 0.5rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    p {
+      padding: 0.25rem 0;
+
+      span {
+        font-size: 1.5rem;
+      }
+    }
+    section {
+      padding: 0.5rem 0.5rem 1rem;
+    }
+  }
+  .bottom-project {
+    background-color: $black-color;
+    border: $border;
+
+    h1 {
+      color: $tan-color;
+      font-size: 2.7rem;
+      font-weight: 700;
+      padding: 0.25rem;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    p {
+      background-color: $tan-color;
+      font-size: 1.25rem;
+      padding: 1rem 0.5rem 2rem;
+    }
+    .red-par {
+      color: $red-color;
+    }
+  }
+}
+
+// Creates the pdf file
+@media print {
+  body {
+    width: 825px;
+    height: 1175px;
+    margin: 0 0 0 0;
+  }
+}
