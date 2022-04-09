@@ -39,11 +39,10 @@ body {
 
   .right-contact {
     text-align: right;
-
-    a {
-      text-decoration: none;
-      color: $tan-color;
-    }
+  }
+  a {
+    text-decoration: none;
+    color: $tan-color;
   }
 }
 
@@ -105,33 +104,37 @@ body {
 
     h1 {
       color: $red-color;
-      font-size: 2.75rem;
+      font-size: 2.5rem;
       font-weight: 700;
       padding: 0 0.5rem;
       text-transform: uppercase;
     }
     p {
-      padding: 0.2rem 0.5rem 0.65rem;
+      padding: 0rem 0.5rem 0.65rem;
     }
   }
   .project1 {
     h1 {
       background-color: $red-color;
-      font-size: 2.25rem;
+      font-size: 2.1rem;
       font-weight: 700;
-      padding: 0.25rem 0.5rem;
+      padding: 0.5rem 0.5rem;
+      text-align: center;
     }
     p {
-      padding: 0.5rem 0.5rem 0.65rem;
+      padding: 0.75rem 0.5rem;
+      line-height: 1.96rem;
+      font-size: 1.35rem;
     }
   }
   .project2 {
     background-color: $black-color;
     h1 {
       color: $red-color;
-      font-size: 3.8rem;
+      font-size: 3.5rem;
       font-weight: 800;
       padding: 0 0.5rem 0.25rem;
+      text-align: center;
     }
     p {
       background-color: $tan-color;
@@ -168,14 +171,14 @@ body {
     h1 {
       background-color: $red-color;
       color: $tan-color;
-      font-size: 2.75rem;
+      font-size: 2.5rem;
       font-weight: 600;
       padding: 0 0.5rem;
       text-align: center;
       text-transform: uppercase;
     }
     p {
-      padding: 0.25rem 0;
+      padding: 0.15rem 0;
 
       span {
         font-size: 1.5rem;
@@ -191,7 +194,7 @@ body {
 
     h1 {
       color: $tan-color;
-      font-size: 2.7rem;
+      font-size: 2.2rem;
       font-weight: 700;
       padding: 0 0.25rem 0.25rem;
       text-align: center;
@@ -201,7 +204,8 @@ body {
     p {
       background-color: $tan-color;
       font-size: 1.25rem;
-      padding: 1rem 0.5rem 1.3rem;
+      line-height: 1.71rem;
+      padding: 0.5rem 0.5rem 0.5rem;
     }
     .red-par {
       color: $red-color;
