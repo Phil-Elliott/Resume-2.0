@@ -1,0 +1,311 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efefef;
+  color: #302f2b;
+  font-family: "Open Sans", sans-serif;
+}
+
+.main-header {
+  background-color: #cf5d52;
+  color: #efefef;
+  font-size: 1.8rem;
+  font-weight: 900;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+
+.contact-header {
+  background-color: #302f2b;
+  color: #efefef;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1.5rem 0.35rem;
+}
+.contact-header .right-contact {
+  text-align: right;
+}
+.contact-header a {
+  text-decoration: none;
+  color: #efefef;
+}
+.contact-header p {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding-bottom: 0.15rem;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 10px;
+  padding: 0.5rem 0.75rem;
+}
+
+.about {
+  background-color: #302f2b;
+  border: #302f2b 4px solid;
+}
+.about h1 {
+  color: #efefef;
+  font-size: 2.6rem;
+  letter-spacing: 0.29rem;
+  font-weight: 800;
+  padding: 0;
+  padding-bottom: 4px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.about .about-content {
+  background-color: #efefef;
+  padding: 0 0.5rem 0.5rem;
+}
+.about .about-content p {
+  font-size: 1rem;
+  font-weight: 600;
+  padding-top: 0.5rem;
+  line-height: 1.7rem;
+}
+.about .about-content .red-par {
+  color: #cf5d52;
+}
+.about .about-content div {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  padding-right: 7rem;
+}
+.about .about-content div img {
+  width: 180%;
+  height: 110%;
+  top: -1rem;
+  transform: rotate(-20deg);
+  position: absolute;
+}
+
+.projects {
+  margin-top: 10px;
+}
+.projects .top-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+.projects .top-projects div {
+  border: #302f2b 4px solid;
+}
+.projects div {
+  font-size: 1.29rem;
+}
+.projects div h1 {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.projects .project3 {
+  border: #302f2b 4px solid;
+  margin-top: 10px;
+}
+.projects .project3 h1 {
+  color: #cf5d52;
+  font-size: 2.5rem;
+  font-weight: 700;
+  padding: 0 0.5rem;
+  text-transform: uppercase;
+}
+.projects .project1 {
+  height: 100%;
+}
+.projects .project1 h1 {
+  background-color: #cf5d52;
+  font-size: 2.4rem;
+  font-weight: 700;
+  padding: 0.5rem 0.5rem;
+  text-align: center;
+}
+.projects .project2 {
+  height: 100%;
+}
+.projects .project2 h1 {
+  background-color: #302f2b;
+  color: #cf5d52;
+  font-size: 2.5rem;
+  font-weight: 800;
+  padding: 0 0.5rem 0.25rem;
+  text-align: center;
+  letter-spacing: 0.19rem;
+}
+
+.right-content div {
+  border: #302f2b 4px solid;
+}
+.right-content .top-content {
+  margin-bottom: 10px;
+  padding: 0.5rem;
+}
+.right-content .top-content .ed-container {
+  border: none;
+  display: flex;
+  position: relative;
+}
+.right-content .top-content .ed-container div {
+  border: none;
+}
+.right-content .top-content .ed-container img {
+  position: absolute;
+  width: 25rem;
+  height: 11rem;
+  top: -5rem;
+  left: -2.5rem;
+  z-index: 100000;
+  rotate: -20deg;
+}
+.right-content .top-content h1 {
+  font-weight: 600;
+  font-size: 2rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+.right-content .top-content p {
+  padding-top: 0.2rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+}
+.right-content .top-content .ed-par1 {
+  font-weight: bold;
+}
+.right-content .top-content .ed-par2 {
+  padding-right: 4rem;
+}
+.right-content .bottom-content {
+  margin-bottom: 10px;
+}
+.right-content .bottom-content h1 {
+  background-color: #cf5d52;
+  color: #efefef;
+  font-size: 2.25rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+.right-content .bottom-content p {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+}
+.right-content .bottom-content p span {
+  color: #cf5d52;
+}
+.right-content .bottom-content p .bullet {
+  color: #302f2b;
+  font-size: 2.75rem;
+}
+.right-content .bottom-content section {
+  padding: 0rem 0.5rem 0.5rem;
+}
+.right-content .bottom-content section .computer-container {
+  border: none;
+  display: flex;
+  position: relative;
+  padding-right: 3rem;
+}
+.right-content .bottom-content section .computer-container img {
+  width: 160%;
+  height: 120%;
+  position: absolute;
+}
+.right-content .bottom-project {
+  border: #302f2b 4px solid;
+}
+.right-content .bottom-project h1 {
+  color: #efefef;
+  background-color: #302f2b;
+  font-size: 2.7rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+}
+.right-content .bottom-project .teacher-container {
+  border: none;
+  padding: 0.5rem 0.5rem 0;
+}
+.right-content .bottom-project .teacher-container .teacher-img {
+  border: none;
+  display: flex;
+  position: relative;
+  padding-left: 4rem;
+}
+.right-content .bottom-project .teacher-container .teacher-img p {
+  text-align: right;
+  padding-right: 1rem;
+}
+.right-content .bottom-project .teacher-container .teacher-img img {
+  width: 120%;
+  height: 110%;
+  position: absolute;
+  top: -1rem;
+  left: -5rem;
+}
+.right-content .bottom-project p {
+  background-color: #efefef;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.7rem;
+  padding-bottom: 0.5rem;
+}
+.right-content .bottom-project .red-par {
+  color: #cf5d52;
+}
+
+a {
+  color: #302f2b;
+  text-decoration: none;
+}
+
+.skill {
+  color: #cf5d52;
+}
+
+.project-content {
+  border: none !important;
+  padding: 0.5rem;
+}
+.project-content p {
+  line-height: 1.7rem;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.project-content .skills {
+  border: none !important;
+  display: flex;
+  flex-wrap: wrap;
+  padding-block: 0.5rem;
+}
+.project-content .skills p {
+  margin-right: 0.5rem;
+  color: #cf5d52;
+}
+
+@media print {
+  body {
+    width: 825px;
+    height: 1175px;
+    margin: 0 0 0 0;
+  }
+}
+/*
+How to save
+
+A4
+custom scale 144
+
+Background graphics
+
+
+
+*//*# sourceMappingURL=style.css.map */

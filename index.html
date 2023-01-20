@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Resume</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="scss/style.css" />
   </head>
   <body>
     <div class="container">
@@ -20,6 +20,7 @@
         </div>
         <div class="right-contact">
           <p>
+            Portfolio:
             <a href="http://phillip-elliott.com">Phillip-Elliott.com</a>
           </p>
           <p>www.linkedin.com/in/phil-p-elliott</p>
@@ -31,15 +32,20 @@
             <h1>Developer Profile</h1>
             <div class="about-content">
               <p>
-                I never thought that I would find a career that I was truly
-                passionate about, until I stumbled across the world of software
-                development. It all started with creating a simple 'Hello
-                World'. From that moment on, I have been hooked.
+                My passion for web development was ignited by my first 'Hello
+                World' program, which sparked an interest in the creative and
+                technical aspects of building websites. Since then, I have been
+                dedicated to learning and honing my skills in web development,
+                constantly seeking new challenges and opportunities to grow.
               </p>
-              <p class="red-par">
-                Below you will find projects I have completed that showcase my
-                skills and general background in developing software.
-              </p>
+              <div>
+                <p class="red-par">
+                  Objective: A web developer position to utilize my skills, grow
+                  and develop professionally, while creating and building things
+                  for the web.
+                </p>
+                <img src="/assets/finger.svg" alt="" />
+              </div>
             </div>
           </div>
           <div class="projects">
@@ -47,25 +53,51 @@
               <a href="https://phil-elliott.github.io/Project_Management-App/">
                 <div class="project1">
                   <h1>Simple Plan</h1>
-                  <p>
-                    A project management application built with React and
-                    TypeScript. The state is managed with Redux. The app is used
-                    to track tasks within a project. The user has the ability to
-                    create projects, create tasks, and follow the progress being
-                    made.
-                  </p>
+                  <div class="project-content">
+                    <p>
+                      A Project Management app used to manage tasks with a team.
+                      A Project Management app used to manage tasks with a team.
+                    </p>
+                    <div class="skills">
+                      <p>Skills:</p>
+                      <p>React</p>
+                      <p>SCSS</p>
+                      <p>Redux</p>
+                      <p>TypeScript</p>
+                      <p>SupaBase</p>
+                      <p>PostgreSQL</p>
+                    </div>
+                    <p>
+                      Learned: Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Accusamus, unde. Repellat suscipit
+                      placeat
+                    </p>
+                  </div>
                 </div>
               </a>
               <a href="https://fitmax.herokuapp.com">
                 <div class="project2">
-                  <h1>FitMax</h1>
-                  <p>
-                    A React application used to track the cardio activities of
-                    the user. These activities can be compared with the goals
-                    that the user sets. The users data is stored in a database
-                    created with PostgreSQL and connected to a server that was
-                    made with Node and Express.
-                  </p>
+                  <h1>CodeMart</h1>
+                  <div class="project-content">
+                    <p>
+                      A Project Management app used to manage tasks with a team.
+                      A Project Management app used to manage tasks with a team.
+                    </p>
+                    <div class="skills">
+                      <p>Skills:</p>
+                      <p>React</p>
+                      <p>SCSS</p>
+                      <p>Redux</p>
+                      <p>TypeScript</p>
+                      <p>SupaBase</p>
+                      <p>PostgreSQL</p>
+                    </div>
+                    <p>
+                      Learned: Lorem ipsum dolor sit amet consectetur
+                      adipisicing elit. Accusamus, unde. Repellat suscipit
+                      placeat
+                    </p>
+                  </div>
                 </div>
               </a>
             </div>
@@ -73,13 +105,26 @@
               href="https://6205d511a4c4b20008b2f0f1--pedantic-bhabha-23f3dd.netlify.app/"
             >
               <div class="project3">
-                <h1>NEWS</h1>
-                <p>
-                  A news application built with React and TypeScript. It is
-                  connected to the Guardian API and provides the user with a
-                  variety of different news articles. It also includes a search
-                  bar to find specific articles.
-                </p>
+                <h1>Code Combat</h1>
+                <div class="project-content">
+                  <p>
+                    A Project Management app used to manage tasks with a team. A
+                    Project Management app used to manage tasks with a team.
+                  </p>
+                  <div class="skills">
+                    <p>Skills:</p>
+                    <p>React</p>
+                    <p>SCSS</p>
+                    <p>Redux</p>
+                    <p>TypeScript</p>
+                    <p>SupaBase</p>
+                    <p>PostgreSQL</p>
+                  </div>
+                  <p>
+                    Learned: Lorem ipsum dolor sit amet consectetur adipisicing
+                    elit. Accusamus, unde. Repellat suscipit placeat
+                  </p>
+                </div>
               </div>
             </a>
           </div>
@@ -88,34 +133,57 @@
           <div class="top-content">
             <h1>Education</h1>
             <p class="ed-par1">Bachelors in Business Administration</p>
-            <p class="ed-par2">
-              Concentration in Project Management and Business Analysis
-            </p>
-            <p class="ed-par3">Towson University, Towson, Maryland</p>
+            <p class="skill">Concentration in Project Management</p>
+            <!-- <p class="ed-par2">
+              Concentration in Project Management and Business Analysis -->
+            <!-- Towson University, 2016 -->
+            <!-- </p> -->
+            <div class="ed-container">
+              <p class="ed-par2">Towson University, 2016</p>
+              <img src="/assets/1.svg" alt="" />
+            </div>
           </div>
           <div class="bottom-content">
             <h1>Software</h1>
             <section>
               <p>
-                <span>.</span> Proficient in HTML, CSS, SASS, and JavaScript
+                <span class="bullet">.</span> Proficient in <span>HTML</span>,
+                <span>CSS</span>, <span>SASS</span>, and <span>JavaScript</span>
               </p>
               <p>
-                <span>.</span> In depth knowledge of React, TypeScript, and
-                Redux
+                <span class="bullet">.</span> In depth knowledge of
+                <span>React</span>, <span>TypeScript</span>,
+                <span>NextJS</span>, <span>Tailwind</span>, and
+                <span>Redux</span>
               </p>
-              <p>
-                <span>.</span> Experience in using Node, Express, and PostgreSQL
-              </p>
+              <div class="computer-container">
+                <p>
+                  <span class="bullet">.</span> Experience in using
+                  <span>SupaBase</span> and <span>PostgreSQL</span>
+                </p>
+                <img src="/assets/7.svg" alt="" />
+              </div>
             </section>
           </div>
           <a href="https://quick-brew.herokuapp.com/">
             <div class="bottom-project">
-              <h1>Quick Brew</h1>
-              <p>
-                An interactive and fully responsive website built with React.
-                This includes reviews, daily events, and an interactive menu. I
-                also created a shop connected with to the Stripe API.
-              </p>
+              <h1>Teacher</h1>
+              <div class="teacher-container">
+                <p>
+                  I am an experienced ESL instructor with 6 years of teaching
+                  experience.
+                </p>
+                <p class="skill">
+                  I have primarily taught young learners of the English language
+                  through online platforms.
+                </p>
+                <div class="teacher-img">
+                  <img src="/assets/chalk.svg" alt="" />
+                  <p>
+                    I have also taught in-person in Beijing and Harbin, China
+                  </p>
+                </div>
+              </div>
             </div>
           </a>
         </div>
@@ -123,3 +191,12 @@
     </div>
   </body>
 </html>
+
+<!--  
+
+Highlight or color skill words in red
+
+Tech: 
+
+
+-->

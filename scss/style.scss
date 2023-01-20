@@ -1,12 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap");
 
-$black-color: rgba(26, 28, 26, 0.9);
-$red-color: rgba(199, 57, 43, 0.8);
+// $black-color: rgba(26, 28, 26, 0.9);
+$black-color: #302f2b;
+$red-color: #cf5d52;
 //#  df6446
-$tan-color: #f3dfc1;
+// $tan-color: #f3dfc1;
+// $tan-color: #f5eadb;
+$tan-color: #efefef;
 //  rgba(243, 206, 161, 0.8)
 $border: $black-color 4px solid;
 
+//#302f2b
+//#d05a49
 * {
   box-sizing: border-box;
   margin: 0;
@@ -22,11 +27,12 @@ body {
 .main-header {
   background-color: $red-color;
   color: $tan-color;
-  font-size: 2.08rem;
-  font-weight: 800;
-  padding: 0.25rem 0;
+  font-size: 1.8rem;
+  font-weight: 900;
+  // padding: 0.25rem 0;
   text-align: center;
   text-transform: uppercase;
+  letter-spacing: 0.3rem;
 }
 
 .contact-header {
@@ -35,7 +41,7 @@ body {
   display: flex;
 
   justify-content: space-between;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1.5rem 0.35rem;
 
   .right-contact {
     text-align: right;
@@ -44,13 +50,19 @@ body {
     text-decoration: none;
     color: $tan-color;
   }
+  p {
+    font-size: 0.8rem;
+    font-weight: 600;
+    // letter-spacing: 0.025rem;
+    padding-bottom: 0.15rem;
+  }
 }
 
 .content {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 10px;
-  padding: 0.75rem 1rem;
+  padding: 0.5rem 0.75rem;
 }
 
 .about {
@@ -59,20 +71,39 @@ body {
 
   h1 {
     color: $tan-color;
-    font-size: 3.1rem;
+    font-size: 2.6rem;
+    letter-spacing: 0.29rem;
     font-weight: 800;
-    padding: 0 0.25rem 0.25rem;
+    padding: 0;
+    padding-bottom: 4px;
     text-align: center;
     text-transform: uppercase;
   }
   .about-content {
     background-color: $tan-color;
+    padding: 0 0.5rem 0.5rem;
     p {
-      font-size: 1.25rem;
-      padding: 0.25rem 0.5rem 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      padding-top: 0.5rem;
+      line-height: 1.7rem;
     }
     .red-par {
       color: $red-color;
+    }
+    div {
+      display: flex;
+      justify-content: space-between;
+      position: relative;
+      padding-right: 7rem;
+
+      img {
+        width: 180%;
+        height: 110%;
+        top: -1rem;
+        transform: rotate(-20deg);
+        position: absolute;
+      }
     }
   }
 }
@@ -109,36 +140,27 @@ body {
       padding: 0 0.5rem;
       text-transform: uppercase;
     }
-    p {
-      padding: 0rem 0.5rem 0.65rem;
-    }
   }
   .project1 {
+    height: 100%;
     h1 {
       background-color: $red-color;
-      font-size: 2.1rem;
+      font-size: 2.4rem;
       font-weight: 700;
       padding: 0.5rem 0.5rem;
       text-align: center;
     }
-    p {
-      padding: 0.75rem 0.5rem;
-      line-height: 1.96rem;
-      font-size: 1.35rem;
-    }
   }
   .project2 {
-    background-color: $black-color;
+    height: 100%;
     h1 {
+      background-color: $black-color;
       color: $red-color;
-      font-size: 3.5rem;
+      font-size: 2.5rem;
       font-weight: 800;
       padding: 0 0.5rem 0.25rem;
       text-align: center;
-    }
-    p {
-      background-color: $tan-color;
-      padding: 0.5rem 0.5rem 0.5rem;
+      letter-spacing: 0.19rem;
     }
   }
 }
@@ -146,24 +168,47 @@ body {
 .right-content {
   div {
     border: $border;
-    font-size: 1.25rem;
+    // font-size: 1.25rem;
   }
   .top-content {
     margin-bottom: 10px;
     padding: 0.5rem;
+
+    .ed-container {
+      border: none;
+      display: flex;
+      position: relative;
+
+      div {
+        border: none;
+      }
+
+      img {
+        position: absolute;
+        width: 25rem;
+        height: 11rem;
+        top: -5rem;
+        left: -2.5rem;
+        z-index: 100000;
+        rotate: -20deg;
+      }
+    }
     h1 {
       font-weight: 600;
-
+      font-size: 2rem;
+      letter-spacing: 0.1rem;
       text-transform: uppercase;
     }
     p {
-      padding: 0.2rem 0;
+      padding-top: 0.2rem;
+      font-weight: 600;
+      line-height: 1.7rem;
     }
     .ed-par1 {
       font-weight: bold;
     }
     .ed-par2 {
-      color: $red-color;
+      padding-right: 4rem;
     }
   }
   .bottom-content {
@@ -171,41 +216,87 @@ body {
     h1 {
       background-color: $red-color;
       color: $tan-color;
-      font-size: 2.5rem;
+      font-size: 2.25rem;
       font-weight: 600;
-      padding: 0 0.5rem;
+      // padding: 0 0.5rem;
       text-align: center;
       text-transform: uppercase;
     }
     p {
-      padding: 0.15rem 0;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.7rem;
+      // padding-bottom: 0.25rem;
 
       span {
-        font-size: 1.5rem;
+        color: $red-color;
+      }
+      .bullet {
+        color: $black-color;
+        font-size: 2.75rem;
       }
     }
     section {
-      padding: 0.5rem 0.5rem 1rem;
+      padding: 0rem 0.5rem 0.5rem;
+
+      .computer-container {
+        border: none;
+        display: flex;
+        position: relative;
+        padding-right: 3rem;
+
+        img {
+          width: 160%;
+          height: 120%;
+          position: absolute;
+        }
+      }
     }
   }
   .bottom-project {
-    background-color: $black-color;
     border: $border;
 
     h1 {
       color: $tan-color;
-      font-size: 2.2rem;
+      background-color: $black-color;
+      font-size: 2.7rem;
       font-weight: 700;
-      padding: 0 0.25rem 0.25rem;
+      // padding: 0 0.25rem 0.25rem;
       text-align: center;
       text-transform: uppercase;
     }
 
+    .teacher-container {
+      border: none;
+      padding: 0.5rem 0.5rem 0;
+
+      .teacher-img {
+        border: none;
+        display: flex;
+        position: relative;
+        padding-left: 4rem;
+
+        p {
+          text-align: right;
+          padding-right: 1rem;
+        }
+
+        img {
+          width: 120%;
+          height: 110%;
+          position: absolute;
+          top: -1rem;
+          left: -5rem;
+        }
+      }
+    }
+
     p {
       background-color: $tan-color;
-      font-size: 1.25rem;
-      line-height: 1.71rem;
-      padding: 0.5rem 0.5rem 0.5rem;
+      font-size: 1rem;
+      font-weight: 600;
+      line-height: 1.7rem;
+      padding-bottom: 0.5rem;
     }
     .red-par {
       color: $red-color;
@@ -218,6 +309,34 @@ a {
   text-decoration: none;
 }
 
+.skill {
+  color: $red-color;
+}
+
+.project-content {
+  border: none !important;
+  padding: 0.5rem;
+
+  p {
+    // padding: 0.75rem 0.5rem;
+    line-height: 1.7rem;
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .skills {
+    border: none !important;
+    display: flex;
+    flex-wrap: wrap;
+    padding-block: 0.5rem;
+
+    p {
+      margin-right: 0.5rem;
+      color: $red-color;
+    }
+  }
+}
+
 // Creates the pdf file
 @media print {
   body {
@@ -226,3 +345,15 @@ a {
     margin: 0 0 0 0;
   }
 }
+
+/*
+How to save
+
+A4
+custom scale 144
+
+Background graphics
+
+
+
+*/
