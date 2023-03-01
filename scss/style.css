@@ -7,7 +7,7 @@
 
 body {
   background-color: #efefef;
-  color: #302f2b;
+  color: black;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -54,8 +54,7 @@ body {
 }
 .about h1 {
   color: #efefef;
-  font-size: 2.6rem;
-  letter-spacing: 0.29rem;
+  font-size: 3.3rem;
   font-weight: 800;
   padding: 0;
   padding-bottom: 4px;
@@ -71,9 +70,11 @@ body {
   font-weight: 600;
   padding-top: 0.5rem;
   line-height: 1.7rem;
+  color: black;
 }
 .about .about-content .red-par {
   color: #cf5d52;
+  font-weight: 700;
 }
 .about .about-content div {
   display: flex;
@@ -96,6 +97,7 @@ body {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 10px;
+  margin-top: 10px;
 }
 .projects .top-projects div {
   border: #302f2b 4px solid;
@@ -123,9 +125,9 @@ body {
 }
 .projects .project1 h1 {
   background-color: #cf5d52;
-  font-size: 2.4rem;
+  font-size: 2.1rem;
   font-weight: 700;
-  padding: 0.5rem 0.5rem;
+  padding: 0.25rem 0.5rem;
   text-align: center;
 }
 .projects .project2 {
@@ -134,11 +136,11 @@ body {
 .projects .project2 h1 {
   background-color: #302f2b;
   color: #cf5d52;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: 800;
   padding: 0 0.5rem 0.25rem;
   text-align: center;
-  letter-spacing: 0.19rem;
+  letter-spacing: 0.25rem;
 }
 
 .right-content div {
@@ -175,12 +177,18 @@ body {
   padding-top: 0.2rem;
   font-weight: 600;
   line-height: 1.7rem;
+  color: black;
 }
 .right-content .top-content .ed-par1 {
-  font-weight: bold;
+  color: black;
 }
 .right-content .top-content .ed-par2 {
   padding-right: 4rem;
+  color: black;
+}
+.right-content .top-content .red-par {
+  color: #cf5d52;
+  font-weight: 700;
 }
 .right-content .bottom-content {
   margin-bottom: 10px;
@@ -200,10 +208,11 @@ body {
 }
 .right-content .bottom-content p span {
   color: #cf5d52;
+  font-weight: 700;
 }
 .right-content .bottom-content p .bullet {
   color: #302f2b;
-  font-size: 2.75rem;
+  font-size: 2.3rem;
 }
 .right-content .bottom-content section {
   padding: 0rem 0.5rem 0.5rem;
@@ -260,6 +269,7 @@ body {
 }
 .right-content .bottom-project .red-par {
   color: #cf5d52;
+  font-weight: 700;
 }
 
 a {
@@ -269,6 +279,7 @@ a {
 
 .skill {
   color: #cf5d52;
+  font-weight: 700;
 }
 
 .project-content {
@@ -276,19 +287,27 @@ a {
   padding: 0.5rem;
 }
 .project-content p {
-  line-height: 1.7rem;
+  line-height: 1.775rem;
   font-size: 1rem;
   font-weight: 600;
+  padding-bottom: 0.25rem;
+  color: black;
 }
 .project-content .skills {
   border: none !important;
   display: flex;
   flex-wrap: wrap;
-  padding-block: 0.5rem;
+  padding-top: 0.25rem;
+  gap: 8px;
 }
 .project-content .skills p {
-  margin-right: 0.5rem;
-  color: #cf5d52;
+  background: #cf5d52;
+  color: #efefef;
+  padding: 0px 6px;
+  font-weight: 700;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  line-height: 1.3rem;
 }
 
 @media print {

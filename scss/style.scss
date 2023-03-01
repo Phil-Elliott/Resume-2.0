@@ -20,7 +20,8 @@ $border: $black-color 4px solid;
 
 body {
   background-color: $tan-color;
-  color: $black-color;
+  // color: $black-color;
+  color: black;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -71,8 +72,8 @@ body {
 
   h1 {
     color: $tan-color;
-    font-size: 2.6rem;
-    letter-spacing: 0.29rem;
+    font-size: 3.3rem;
+    // letter-spacing: 0.29rem;
     font-weight: 800;
     padding: 0;
     padding-bottom: 4px;
@@ -87,9 +88,12 @@ body {
       font-weight: 600;
       padding-top: 0.5rem;
       line-height: 1.7rem;
+      // color: $black-color;
+      color: black;
     }
     .red-par {
       color: $red-color;
+      font-weight: 700;
     }
     div {
       display: flex;
@@ -115,6 +119,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
+    margin-top: 10px;
 
     div {
       border: $border;
@@ -145,9 +150,9 @@ body {
     height: 100%;
     h1 {
       background-color: $red-color;
-      font-size: 2.4rem;
+      font-size: 2.1rem;
       font-weight: 700;
-      padding: 0.5rem 0.5rem;
+      padding: 0.25rem 0.5rem;
       text-align: center;
     }
   }
@@ -156,11 +161,11 @@ body {
     h1 {
       background-color: $black-color;
       color: $red-color;
-      font-size: 2.5rem;
+      font-size: 2.25rem;
       font-weight: 800;
       padding: 0 0.5rem 0.25rem;
       text-align: center;
-      letter-spacing: 0.19rem;
+      letter-spacing: 0.25rem;
     }
   }
 }
@@ -203,12 +208,19 @@ body {
       padding-top: 0.2rem;
       font-weight: 600;
       line-height: 1.7rem;
+      color: black;
     }
     .ed-par1 {
-      font-weight: bold;
+      // font-weight: bold;
+      color: black;
     }
     .ed-par2 {
       padding-right: 4rem;
+      color: black;
+    }
+    .red-par {
+      color: $red-color;
+      font-weight: 700;
     }
   }
   .bottom-content {
@@ -230,10 +242,11 @@ body {
 
       span {
         color: $red-color;
+        font-weight: 700;
       }
       .bullet {
         color: $black-color;
-        font-size: 2.75rem;
+        font-size: 2.3rem;
       }
     }
     section {
@@ -300,6 +313,7 @@ body {
     }
     .red-par {
       color: $red-color;
+      font-weight: 700;
     }
   }
 }
@@ -311,6 +325,7 @@ a {
 
 .skill {
   color: $red-color;
+  font-weight: 700;
 }
 
 .project-content {
@@ -319,22 +334,35 @@ a {
 
   p {
     // padding: 0.75rem 0.5rem;
-    line-height: 1.7rem;
+    line-height: 1.775rem;
     font-size: 1rem;
     font-weight: 600;
+    padding-bottom: 0.25rem;
+    color: black;
   }
 
   .skills {
     border: none !important;
     display: flex;
     flex-wrap: wrap;
-    padding-block: 0.5rem;
+    padding-top: 0.25rem;
+    gap: 8px;
 
     p {
-      margin-right: 0.5rem;
-      color: $red-color;
+      // margin-right: 0.5rem;
+      background: $red-color;
+      color: $tan-color;
+      padding: 0px 6px;
+      font-weight: 700;
+      border-radius: 3px;
+      font-size: 0.9rem;
+      line-height: 1.3rem;
     }
   }
+}
+
+p {
+  // color: black !important;
 }
 
 // Creates the pdf file
