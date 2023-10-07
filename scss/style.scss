@@ -9,6 +9,7 @@ $red-color: #cf5d52;
 $tan-color: #efefef;
 //  rgba(243, 206, 161, 0.8)
 $border: $black-color 4px solid;
+$border-radius: 2px;
 
 //#302f2b
 //#d05a49
@@ -23,6 +24,7 @@ body {
   // color: $black-color;
   color: black;
   font-family: "Open Sans", sans-serif;
+  // overflow: hidden;
 }
 
 .main-header {
@@ -30,7 +32,6 @@ body {
   color: $tan-color;
   font-size: 1.8rem;
   font-weight: 900;
-  // padding: 0.25rem 0;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.3rem;
@@ -42,7 +43,8 @@ body {
   display: flex;
 
   justify-content: space-between;
-  padding: 0.5rem 1.5rem 0.35rem;
+  // padding: 0.5rem 1.5rem 0.35rem;
+  padding: 0.4rem 1.5rem;
 
   .right-contact {
     text-align: right;
@@ -63,20 +65,23 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 10px;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .about {
   background-color: $black-color;
   border: $border;
+  border-top: 0;
+  border-radius: $border-radius;
 
   h1 {
     color: $tan-color;
-    font-size: 3.3rem;
-    // letter-spacing: 0.29rem;
+    font-size: 2.7rem;
+    // font-size: 2.75rem;
+    letter-spacing: 0.8rem;
     font-weight: 800;
     padding: 0;
-    padding-bottom: 4px;
+    // padding-bottom: 4px;
     text-align: center;
     text-transform: uppercase;
   }
@@ -88,23 +93,25 @@ body {
       font-weight: 600;
       padding-top: 0.5rem;
       line-height: 1.7rem;
-      // color: $black-color;
       color: black;
     }
     .red-par {
       color: $red-color;
       font-weight: 700;
     }
-    div {
+    .about-flex {
       display: flex;
       justify-content: space-between;
       position: relative;
-      padding-right: 7rem;
+
+      .about-par {
+        padding-right: 6rem;
+      }
 
       img {
         width: 180%;
-        height: 110%;
-        top: -1rem;
+        height: 80%;
+        top: -0.75rem;
         transform: rotate(-20deg);
         position: absolute;
       }
@@ -123,26 +130,30 @@ body {
 
     div {
       border: $border;
+      border-radius: $border-radius;
     }
   }
 
   div {
-    font-size: 1.29rem;
+    font-size: 1rem;
 
     h1 {
       font-weight: 800;
+      // border-radius: $border-radius;
       text-transform: uppercase;
     }
   }
   .project3 {
     border: $border;
+    border-radius: $border-radius;
     margin-top: 10px;
 
     h1 {
       color: $red-color;
-      font-size: 2.5rem;
+      font-size: 2.65rem;
       font-weight: 700;
       padding: 0 0.5rem;
+      letter-spacing: 0.15rem;
       text-transform: uppercase;
     }
   }
@@ -150,22 +161,32 @@ body {
     height: 100%;
     h1 {
       background-color: $red-color;
+      // color: $black-color;
+      color: $tan-color;
       font-size: 2.1rem;
+      letter-spacing: 0.1rem;
       font-weight: 700;
-      padding: 0.25rem 0.5rem;
+      // padding: 0.25rem 0.5rem;
       text-align: center;
     }
   }
   .project2 {
     height: 100%;
+
+    .project2-padding {
+      padding-bottom: 1.1rem;
+    }
+
     h1 {
       background-color: $black-color;
       color: $red-color;
-      font-size: 2.25rem;
+      font-size: 2.5rem;
       font-weight: 800;
-      padding: 0 0.5rem 0.25rem;
+      padding: 0 0.5rem 4px;
       text-align: center;
-      letter-spacing: 0.25rem;
+      letter-spacing: 0.15rem;
+
+      // letter-spacing: 0.25rem;
     }
   }
 }
@@ -173,11 +194,16 @@ body {
 .right-content {
   div {
     border: $border;
-    // font-size: 1.25rem;
+    border-radius: $border-radius;
+
+    h1 {
+      // border-radius: $border-radius;
+    }
   }
   .top-content {
     margin-bottom: 10px;
     padding: 0.5rem;
+    padding-top: 0;
 
     .ed-container {
       border: none;
@@ -205,7 +231,7 @@ body {
       text-transform: uppercase;
     }
     p {
-      padding-top: 0.2rem;
+      // padding-top: 0.2rem;
       font-weight: 600;
       line-height: 1.7rem;
       color: black;
@@ -227,7 +253,7 @@ body {
     margin-bottom: 10px;
     h1 {
       background-color: $red-color;
-      color: $tan-color;
+      color: $black-color;
       font-size: 2.25rem;
       font-weight: 600;
       // padding: 0 0.5rem;
@@ -256,23 +282,26 @@ body {
         border: none;
         display: flex;
         position: relative;
-        padding-right: 3rem;
+        // padding-right: 3rem;
 
         img {
           width: 160%;
           height: 120%;
           position: absolute;
+          top: 0.5rem;
         }
       }
     }
   }
   .bottom-project {
     border: $border;
+    padding-bottom: 0.1rem;
 
     h1 {
       color: $tan-color;
       background-color: $black-color;
-      font-size: 2.7rem;
+      font-size: 2.25rem;
+      letter-spacing: 0.25rem;
       font-weight: 700;
       // padding: 0 0.25rem 0.25rem;
       text-align: center;
@@ -296,9 +325,9 @@ body {
 
         img {
           width: 120%;
-          height: 110%;
+          height: 180%;
           position: absolute;
-          top: -1rem;
+          top: -2.5rem;
           left: -5rem;
         }
       }
@@ -309,7 +338,7 @@ body {
       font-size: 1rem;
       font-weight: 600;
       line-height: 1.7rem;
-      padding-bottom: 0.5rem;
+      padding-bottom: 0.03rem;
     }
     .red-par {
       color: $red-color;
@@ -346,7 +375,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     padding-top: 0.25rem;
-    gap: 8px;
+    gap: 5px;
 
     p {
       // margin-right: 0.5rem;
@@ -355,7 +384,7 @@ a {
       padding: 0px 6px;
       font-weight: 700;
       border-radius: 3px;
-      font-size: 0.9rem;
+      font-size: 0.8rem;
       line-height: 1.3rem;
     }
   }

@@ -26,7 +26,7 @@ body {
   color: #efefef;
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 1.5rem 0.35rem;
+  padding: 0.4rem 1.5rem;
 }
 .contact-header .right-contact {
   text-align: right;
@@ -45,19 +45,21 @@ body {
   display: grid;
   grid-template-columns: 3fr 1fr;
   gap: 10px;
-  padding: 0.5rem 0.75rem;
+  padding: 0.5rem 0.5rem;
 }
 
 .about {
   background-color: #302f2b;
   border: #302f2b 4px solid;
+  border-top: 0;
+  border-radius: 2px;
 }
 .about h1 {
   color: #efefef;
-  font-size: 3.3rem;
+  font-size: 2.7rem;
+  letter-spacing: 0.8rem;
   font-weight: 800;
   padding: 0;
-  padding-bottom: 4px;
   text-align: center;
   text-transform: uppercase;
 }
@@ -76,16 +78,18 @@ body {
   color: #cf5d52;
   font-weight: 700;
 }
-.about .about-content div {
+.about .about-content .about-flex {
   display: flex;
   justify-content: space-between;
   position: relative;
-  padding-right: 7rem;
 }
-.about .about-content div img {
+.about .about-content .about-flex .about-par {
+  padding-right: 6rem;
+}
+.about .about-content .about-flex img {
   width: 180%;
-  height: 110%;
-  top: -1rem;
+  height: 80%;
+  top: -0.75rem;
   transform: rotate(-20deg);
   position: absolute;
 }
@@ -101,9 +105,10 @@ body {
 }
 .projects .top-projects div {
   border: #302f2b 4px solid;
+  border-radius: 2px;
 }
 .projects div {
-  font-size: 1.29rem;
+  font-size: 1rem;
 }
 .projects div h1 {
   font-weight: 800;
@@ -111,13 +116,15 @@ body {
 }
 .projects .project3 {
   border: #302f2b 4px solid;
+  border-radius: 2px;
   margin-top: 10px;
 }
 .projects .project3 h1 {
   color: #cf5d52;
-  font-size: 2.5rem;
+  font-size: 2.65rem;
   font-weight: 700;
   padding: 0 0.5rem;
+  letter-spacing: 0.15rem;
   text-transform: uppercase;
 }
 .projects .project1 {
@@ -125,30 +132,36 @@ body {
 }
 .projects .project1 h1 {
   background-color: #cf5d52;
+  color: #efefef;
   font-size: 2.1rem;
+  letter-spacing: 0.1rem;
   font-weight: 700;
-  padding: 0.25rem 0.5rem;
   text-align: center;
 }
 .projects .project2 {
   height: 100%;
 }
+.projects .project2 .project2-padding {
+  padding-bottom: 1.1rem;
+}
 .projects .project2 h1 {
   background-color: #302f2b;
   color: #cf5d52;
-  font-size: 2.25rem;
+  font-size: 2.5rem;
   font-weight: 800;
-  padding: 0 0.5rem 0.25rem;
+  padding: 0 0.5rem 4px;
   text-align: center;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.15rem;
 }
 
 .right-content div {
   border: #302f2b 4px solid;
+  border-radius: 2px;
 }
 .right-content .top-content {
   margin-bottom: 10px;
   padding: 0.5rem;
+  padding-top: 0;
 }
 .right-content .top-content .ed-container {
   border: none;
@@ -174,7 +187,6 @@ body {
   text-transform: uppercase;
 }
 .right-content .top-content p {
-  padding-top: 0.2rem;
   font-weight: 600;
   line-height: 1.7rem;
   color: black;
@@ -195,7 +207,7 @@ body {
 }
 .right-content .bottom-content h1 {
   background-color: #cf5d52;
-  color: #efefef;
+  color: #302f2b;
   font-size: 2.25rem;
   font-weight: 600;
   text-align: center;
@@ -221,20 +233,22 @@ body {
   border: none;
   display: flex;
   position: relative;
-  padding-right: 3rem;
 }
 .right-content .bottom-content section .computer-container img {
   width: 160%;
   height: 120%;
   position: absolute;
+  top: 0.5rem;
 }
 .right-content .bottom-project {
   border: #302f2b 4px solid;
+  padding-bottom: 0.1rem;
 }
 .right-content .bottom-project h1 {
   color: #efefef;
   background-color: #302f2b;
-  font-size: 2.7rem;
+  font-size: 2.25rem;
+  letter-spacing: 0.25rem;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -255,9 +269,9 @@ body {
 }
 .right-content .bottom-project .teacher-container .teacher-img img {
   width: 120%;
-  height: 110%;
+  height: 180%;
   position: absolute;
-  top: -1rem;
+  top: -2.5rem;
   left: -5rem;
 }
 .right-content .bottom-project p {
@@ -265,7 +279,7 @@ body {
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.7rem;
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.03rem;
 }
 .right-content .bottom-project .red-par {
   color: #cf5d52;
@@ -298,7 +312,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding-top: 0.25rem;
-  gap: 8px;
+  gap: 5px;
 }
 .project-content .skills p {
   background: #cf5d52;
@@ -306,7 +320,7 @@ a {
   padding: 0px 6px;
   font-weight: 700;
   border-radius: 3px;
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   line-height: 1.3rem;
 }
 
