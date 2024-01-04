@@ -68,7 +68,7 @@ body {
   padding: 0 0.5rem 0.5rem;
 }
 .about .about-content p {
-  font-size: 1.04rem;
+  font-size: 1.03rem;
   font-weight: 600;
   padding-top: 0.5rem;
   line-height: 1.7rem;
@@ -128,27 +128,24 @@ body {
   height: 100%;
 }
 .projects .project1 h1 {
-  background-color: #cf5d52;
-  color: #efefef;
+  background-color: #302f2b;
+  color: #cf5d52;
   font-size: 2.1rem;
-  letter-spacing: 0.1rem;
   font-weight: 700;
+  padding: 0 0.5rem 4px;
   text-align: center;
+  letter-spacing: 0.1rem;
 }
 .projects .project2 {
   height: 100%;
 }
-.projects .project2 .project2-padding {
-  padding-bottom: 1.1rem;
-}
 .projects .project2 h1 {
-  background-color: #302f2b;
-  color: #cf5d52;
-  font-size: 2.5rem;
+  background-color: #cf5d52;
+  color: #efefef;
+  font-size: 1.9rem;
   font-weight: 800;
-  padding: 0 0.5rem 4px;
   text-align: center;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0.25rem;
 }
 
 .right-content div {
@@ -319,6 +316,18 @@ a {
   border-radius: 3px;
   font-size: 0.8rem;
   line-height: 1.3rem;
+}
+
+.experience-header {
+  border: #302f2b 4px solid;
+  border-radius: 2px;
+  border-color: #302f2b;
+  color: #302f2b;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 }
 
 @media print {

@@ -88,7 +88,7 @@ body {
     background-color: $tan-color;
     padding: 0 0.5rem 0.5rem;
     p {
-      font-size: 1.04rem;
+      font-size: 1.03rem;
       font-weight: 600;
       padding-top: 0.5rem;
       line-height: 1.7rem;
@@ -124,6 +124,7 @@ body {
   .top-projects {
     display: grid;
     grid-template-columns: 1fr 1fr;
+
     gap: 10px;
     margin-top: 10px;
 
@@ -136,7 +137,6 @@ body {
   div {
     h1 {
       font-weight: 800;
-      // border-radius: $border-radius;
       text-transform: uppercase;
     }
   }
@@ -157,33 +157,29 @@ body {
   .project1 {
     height: 100%;
     h1 {
-      background-color: $red-color;
-      // color: $black-color;
-      color: $tan-color;
+      background-color: $black-color;
+      color: $red-color;
       font-size: 2.1rem;
-      letter-spacing: 0.1rem;
       font-weight: 700;
-      // padding: 0.25rem 0.5rem;
+      padding: 0 0.5rem 4px;
       text-align: center;
+      letter-spacing: 0.1rem;
     }
   }
   .project2 {
     height: 100%;
 
     .project2-padding {
-      padding-bottom: 1.1rem;
+      // padding-bottom: 1rem;
     }
 
     h1 {
-      background-color: $black-color;
-      color: $red-color;
-      font-size: 2.5rem;
+      background-color: $red-color;
+      color: $tan-color;
+      font-size: 1.9rem;
       font-weight: 800;
-      padding: 0 0.5rem 4px;
       text-align: center;
-      letter-spacing: 0.15rem;
-
-      // letter-spacing: 0.25rem;
+      letter-spacing: 0.25rem;
     }
   }
 }
@@ -387,8 +383,17 @@ a {
   }
 }
 
-p {
-  // color: black !important;
+.experience-header {
+  border: $border;
+  border-radius: $border-radius;
+  border-color: $black-color;
+  // background-color: $red-color;
+  color: $black-color;
+  font-size: 1.6rem;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
 }
 
 // Creates the pdf file
