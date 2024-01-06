@@ -44,7 +44,7 @@ body {
 
   justify-content: space-between;
   // padding: 0.5rem 1.5rem 0.35rem;
-  padding: 0.4rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 
   .right-contact {
     text-align: right;
@@ -54,10 +54,10 @@ body {
     color: $tan-color;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 600;
     // letter-spacing: 0.025rem;
-    padding-bottom: 0.15rem;
+    padding-bottom: 0.2rem;
   }
 }
 
@@ -76,8 +76,8 @@ body {
 
   h1 {
     color: $tan-color;
-    font-size: 2.9rem;
-    letter-spacing: 0.3rem;
+    font-size: 2.4rem;
+    letter-spacing: 0.5rem;
     font-weight: 800;
     padding: 0;
     // padding-bottom: 4px;
@@ -88,7 +88,7 @@ body {
     background-color: $tan-color;
     padding: 0 0.5rem 0.5rem;
     p {
-      font-size: 1.03rem;
+      font-size: 0.9rem;
       font-weight: 600;
       padding-top: 0.5rem;
       line-height: 1.7rem;
@@ -123,7 +123,7 @@ body {
 
   .top-projects {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.09fr 1fr;
 
     gap: 10px;
     margin-top: 10px;
@@ -147,23 +147,24 @@ body {
 
     h1 {
       color: $red-color;
-      font-size: 2.4rem;
+      font-size: 2.05rem;
       font-weight: 700;
       padding: 0 0.5rem;
-      letter-spacing: 0.15rem;
+      letter-spacing: 0rem;
       text-transform: uppercase;
     }
   }
   .project1 {
     height: 100%;
+
     h1 {
       background-color: $black-color;
       color: $red-color;
-      font-size: 2.1rem;
+      font-size: 2rem;
       font-weight: 700;
       padding: 0 0.5rem 4px;
       text-align: center;
-      letter-spacing: 0.1rem;
+      letter-spacing: 0.18rem;
     }
   }
   .project2 {
@@ -193,6 +194,7 @@ body {
       // border-radius: $border-radius;
     }
   }
+
   .top-content {
     margin-bottom: 10px;
     padding: 0.5rem;
@@ -210,8 +212,8 @@ body {
       img {
         position: absolute;
         width: 25rem;
-        height: 11rem;
-        top: -5rem;
+        height: 8rem;
+        top: -5.2rem;
         left: -2.5rem;
         z-index: 100000;
         rotate: -20deg;
@@ -224,9 +226,10 @@ body {
       text-transform: uppercase;
     }
     p {
-      // padding-top: 0.2rem;
+      padding-bottom: 0.2rem;
       font-weight: 600;
       line-height: 1.7rem;
+      font-size: 0.9rem;
       color: black;
     }
     .ed-par1 {
@@ -254,10 +257,10 @@ body {
       text-transform: uppercase;
     }
     p {
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 600;
       line-height: 1.7rem;
-      // padding-bottom: 0.25rem;
+      padding-bottom: 0.2rem;
 
       span {
         color: $red-color;
@@ -269,19 +272,25 @@ body {
       }
     }
     section {
-      padding: 0rem 0.5rem 0.5rem;
+      padding: 0.5rem 0.5rem 0.5rem;
 
       .computer-container {
         border: none;
         display: flex;
         position: relative;
         // padding-right: 3rem;
+        padding-top: 0.2rem;
+
+        p {
+          padding-right: 4rem;
+        }
 
         img {
-          width: 160%;
-          height: 120%;
           position: absolute;
-          top: 0.5rem;
+          width: 25rem;
+          height: 9rem;
+          top: -0.75rem;
+          left: -2.5rem;
         }
       }
     }
@@ -293,8 +302,8 @@ body {
     h1 {
       color: $tan-color;
       background-color: $black-color;
-      font-size: 2.25rem;
-      letter-spacing: 0.25rem;
+      font-size: 2.5rem;
+      letter-spacing: 0.22rem;
       font-weight: 700;
       // padding: 0 0.25rem 0.25rem;
       text-align: center;
@@ -309,29 +318,29 @@ body {
         border: none;
         display: flex;
         position: relative;
-        padding-left: 4rem;
+        padding-left: 2.5rem;
 
         p {
           text-align: right;
-          padding-right: 1rem;
+          padding-right: 0.25rem;
         }
 
         img {
           width: 120%;
           height: 180%;
           position: absolute;
-          top: -2.5rem;
-          left: -5rem;
+          top: -1.75rem;
+          left: -6rem;
         }
       }
     }
 
     p {
       background-color: $tan-color;
-      font-size: 1rem;
+      font-size: 0.9rem;
       font-weight: 600;
       line-height: 1.7rem;
-      padding-bottom: 0.03rem;
+      padding-bottom: 0.22rem;
     }
     .red-par {
       color: $red-color;
@@ -354,12 +363,17 @@ a {
   border: none !important;
   padding: 0.5rem;
 
+  .red-par {
+    color: $red-color;
+    font-weight: 700;
+  }
+
   p {
     // padding: 0.75rem 0.5rem;
-    line-height: 1.775rem;
-    font-size: 1rem;
+    line-height: 1.7rem;
+    font-size: 0.9rem;
     font-weight: 600;
-    padding-bottom: 0.25rem;
+    padding-bottom: 0.2rem;
     color: black;
   }
 

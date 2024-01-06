@@ -26,7 +26,7 @@ body {
   color: #efefef;
   display: flex;
   justify-content: space-between;
-  padding: 0.4rem 1.5rem;
+  padding: 0.5rem 1.5rem;
 }
 .contact-header .right-contact {
   text-align: right;
@@ -36,9 +36,9 @@ body {
   color: #efefef;
 }
 .contact-header p {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  padding-bottom: 0.15rem;
+  padding-bottom: 0.2rem;
 }
 
 .content {
@@ -56,8 +56,8 @@ body {
 }
 .about h1 {
   color: #efefef;
-  font-size: 2.9rem;
-  letter-spacing: 0.3rem;
+  font-size: 2.4rem;
+  letter-spacing: 0.5rem;
   font-weight: 800;
   padding: 0;
   text-align: center;
@@ -68,7 +68,7 @@ body {
   padding: 0 0.5rem 0.5rem;
 }
 .about .about-content p {
-  font-size: 1.03rem;
+  font-size: 0.9rem;
   font-weight: 600;
   padding-top: 0.5rem;
   line-height: 1.7rem;
@@ -99,7 +99,7 @@ body {
 }
 .projects .top-projects {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.09fr 1fr;
   gap: 10px;
   margin-top: 10px;
 }
@@ -118,10 +118,10 @@ body {
 }
 .projects .project3 h1 {
   color: #cf5d52;
-  font-size: 2.4rem;
+  font-size: 2.05rem;
   font-weight: 700;
   padding: 0 0.5rem;
-  letter-spacing: 0.15rem;
+  letter-spacing: 0rem;
   text-transform: uppercase;
 }
 .projects .project1 {
@@ -130,11 +130,11 @@ body {
 .projects .project1 h1 {
   background-color: #302f2b;
   color: #cf5d52;
-  font-size: 2.1rem;
+  font-size: 2rem;
   font-weight: 700;
   padding: 0 0.5rem 4px;
   text-align: center;
-  letter-spacing: 0.1rem;
+  letter-spacing: 0.18rem;
 }
 .projects .project2 {
   height: 100%;
@@ -168,8 +168,8 @@ body {
 .right-content .top-content .ed-container img {
   position: absolute;
   width: 25rem;
-  height: 11rem;
-  top: -5rem;
+  height: 8rem;
+  top: -5.2rem;
   left: -2.5rem;
   z-index: 100000;
   rotate: -20deg;
@@ -181,8 +181,10 @@ body {
   text-transform: uppercase;
 }
 .right-content .top-content p {
+  padding-bottom: 0.2rem;
   font-weight: 600;
   line-height: 1.7rem;
+  font-size: 0.9rem;
   color: black;
 }
 .right-content .top-content .ed-par1 {
@@ -208,9 +210,10 @@ body {
   text-transform: uppercase;
 }
 .right-content .bottom-content p {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.7rem;
+  padding-bottom: 0.2rem;
 }
 .right-content .bottom-content p span {
   color: #cf5d52;
@@ -221,18 +224,23 @@ body {
   font-size: 2.3rem;
 }
 .right-content .bottom-content section {
-  padding: 0rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem;
 }
 .right-content .bottom-content section .computer-container {
   border: none;
   display: flex;
   position: relative;
+  padding-top: 0.2rem;
+}
+.right-content .bottom-content section .computer-container p {
+  padding-right: 4rem;
 }
 .right-content .bottom-content section .computer-container img {
-  width: 160%;
-  height: 120%;
   position: absolute;
-  top: 0.5rem;
+  width: 25rem;
+  height: 9rem;
+  top: -0.75rem;
+  left: -2.5rem;
 }
 .right-content .bottom-project {
   border: #302f2b 4px solid;
@@ -241,8 +249,8 @@ body {
 .right-content .bottom-project h1 {
   color: #efefef;
   background-color: #302f2b;
-  font-size: 2.25rem;
-  letter-spacing: 0.25rem;
+  font-size: 2.5rem;
+  letter-spacing: 0.22rem;
   font-weight: 700;
   text-align: center;
   text-transform: uppercase;
@@ -255,25 +263,25 @@ body {
   border: none;
   display: flex;
   position: relative;
-  padding-left: 4rem;
+  padding-left: 2.5rem;
 }
 .right-content .bottom-project .teacher-container .teacher-img p {
   text-align: right;
-  padding-right: 1rem;
+  padding-right: 0.25rem;
 }
 .right-content .bottom-project .teacher-container .teacher-img img {
   width: 120%;
   height: 180%;
   position: absolute;
-  top: -2.5rem;
-  left: -5rem;
+  top: -1.75rem;
+  left: -6rem;
 }
 .right-content .bottom-project p {
   background-color: #efefef;
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 600;
   line-height: 1.7rem;
-  padding-bottom: 0.03rem;
+  padding-bottom: 0.22rem;
 }
 .right-content .bottom-project .red-par {
   color: #cf5d52;
@@ -294,11 +302,15 @@ a {
   border: none !important;
   padding: 0.5rem;
 }
+.project-content .red-par {
+  color: #cf5d52;
+  font-weight: 700;
+}
 .project-content p {
-  line-height: 1.775rem;
-  font-size: 1rem;
+  line-height: 1.7rem;
+  font-size: 0.9rem;
   font-weight: 600;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.2rem;
   color: black;
 }
 .project-content .skills {
